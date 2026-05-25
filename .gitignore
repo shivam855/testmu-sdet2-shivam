@@ -4,6 +4,6 @@ reports/
 test-results/
 allure-results/
 playwright-report/
-.env
+# .env
 *.png
 *.mp4
