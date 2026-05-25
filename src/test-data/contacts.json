@@ -1,0 +1,59 @@
+{
+  "validContacts": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "birthdate": "1990-01-15",
+      "email": "john.doe@example.com",
+      "phone": "8005551234",
+      "street1": "123 Main St",
+      "street2": "Apt 4",
+      "city": "New York",
+      "stateProvince": "NY",
+      "postalCode": "10001",
+      "country": "USA"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "birthdate": "1985-06-20",
+      "email": "jane.smith@example.com",
+      "phone": "8005555678",
+      "street1": "456 Oak Ave",
+      "city": "Los Angeles",
+      "stateProvince": "CA",
+      "postalCode": "90001",
+      "country": "USA"
+    },
+    {
+      "firstName": "Raj",
+      "lastName": "Patel",
+      "email": "raj.patel@example.com",
+      "phone": "9198765432",
+      "city": "Mumbai",
+      "country": "India"
+    }
+  ],
+  "invalidContacts": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "description": "Missing required fields",
+      "expectedError": "Contact validation failed"
+    },
+    {
+      "firstName": "A",
+      "lastName": "B",
+      "birthdate": "not-a-date",
+      "description": "Invalid birthdate format",
+      "expectedError": "Contact validation failed"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "BadEmail",
+      "email": "not-an-email",
+      "description": "Invalid email format",
+      "expectedError": "Contact validation failed"
+    }
+  ]
+}

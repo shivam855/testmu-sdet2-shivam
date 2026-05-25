@@ -1,0 +1,35 @@
+{
+  "validUsers": [
+    {
+      "email": "testmu.auto@example.com",
+      "password": "TestMu2024!",
+      "description": "Primary test account"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "email": "",
+      "password": "",
+      "description": "Empty credentials",
+      "expectedError": "Incorrect username or password"
+    },
+    {
+      "email": "notauser@fake.com",
+      "password": "WrongPass123",
+      "description": "Non-existent user",
+      "expectedError": "Incorrect username or password"
+    },
+    {
+      "email": "bademail",
+      "password": "TestMu2024!",
+      "description": "Invalid email format",
+      "expectedError": "Incorrect username or password"
+    }
+  ],
+  "signupUser": {
+    "firstName": "AutoTest",
+    "lastName": "User",
+    "email": "testmu.auto@example.com",
+    "password": "TestMu2024!"
+  }
+}
